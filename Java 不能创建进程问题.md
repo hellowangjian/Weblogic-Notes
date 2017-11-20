@@ -1,5 +1,9 @@
-## java.lang.OutOfMemoryError: unable to create new native thread
-## Cannot create worker GC thread. Out of system resources.
+# java 报错：
+### java.lang.OutOfMemoryError: unable to create new native thread
+### or
+### Cannot create worker GC thread. Out of system resources.
+
+---
 
  此问题**可能**是因为 Linux 对普通用户的创建进程数量有限制，默认是 1024 个，可以使用 `ulimit -u` 命令查看。
 ```BASH
@@ -49,5 +53,5 @@
 
 ### Reference：
 https://www.cnblogs.com/myshare/archive/2016/02/02/5177135.html
-http://cn.linux.vbird.org/linux_basic/0410accountmanager_5.php#limits
+http://cn.linux.vbird.org/linux_basic/0410accountmanager_5.php#limits  
 https://www.cnblogs.com/pangguoping/p/5792075.html
