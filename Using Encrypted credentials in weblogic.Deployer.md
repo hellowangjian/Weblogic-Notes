@@ -1,6 +1,6 @@
 ## Using Encrypted credentials in weblogic.Deployer
 
-###参考：
+### 参考：
 [Using encrypted credentials in WLST](http://theheat.dk/blog/?p=157)
 
 在使用 weblogic.Deployer 实现[使用命令行对 weblogic 进行项目自动发布](http://blog.csdn.net/zlxfogger/article/details/52768360)，但是需要指定用户名和密码，用户名和密码写在脚本中，心好慌。 其实这个用户名和密码可以加密存储在一个文件中，让 weblogic.Deployer 使用时再自行进行解密使用，这样不就安全了吗！
